@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+</head>
+<style>
+    #btn {
+        padding: 10px 14px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>This is my heading </h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem perspiciatis culpa provident quod error quos tempora iure exercitationem ex molestiae placeat delectus excepturi sapiente ipsam quaerat, expedita eum, aliquam temporibus consectetur, et blanditiis. Eaque animi aliquid consequuntur ullam dolorem. Aut aspernatur sint ab rerum labore! Rerum consequuntur nobis facere quod optio minima officiis error quidem natus, eveniet voluptatum. Sapiente, ipsa nam commodi assumenda quia, maiores, nulla sunt perferendis doloribus cupiditate ullam sit velit? Rerum accusamus quos natus. Tempore, laudantium incidunt. Culpa adipisci quas labore tenetur explicabo consectetur rem inventore officiis molestiae veritatis aperiam saepe illum maiores enim delectus praesentium, debitis, impedit vitae asperiores sequi! Nobis, sed fuga perferendis placeat cupiditate dicta est at a dolorum consequatur quisquam. Quia ex odit ipsum, repellendus voluptas suscipit architecto rem id. Animi dolorum necessitatibus doloremque molestiae, odit possimus at? Architecto magnam adipisci dolorum explicabo quis! Aperiam fugit consequatur voluptatem molestiae magni culpa enim quasi? Dolorem, magnam maiores nobis, sint quibusdam nemo incidunt, quos voluptas saepe voluptates repudiandae porro ipsa magni illo ipsum omnis ipsam vel? Ad cupiditate praesentium minima ducimus fugit tempora necessitatibus qui vero, corrupti quibusdam dolores voluptates dolor nisi rem architecto? Illo fuga asperiores, magni ipsum vero similique cumque. Assumenda omnis quas officia nesciunt asperiores architecto molestiae sed facere veniam illo aliquam aperiam perferendis, totam dolor expedita est delectus vitae placeat quis cumque! Assumenda doloribus repellendus similique provident ex quod soluta quis sint beatae nihil.</p>
+    </div>
+    <button id="btn" onclock="toggleHide()">Show/Hide</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run() {
+            console.log('Mouse Inside');
+        });
+
+        para.addEventListener('mouseout', function run() {
+            console.log('Mouse now went outside');
+        });
+
+        function toggleHide() {
+            let para = document.getElementById('para');
+            if(para.style.display != 'none') {
+                para.style.display = 'none';
+            } else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
