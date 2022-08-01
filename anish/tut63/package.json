@@ -1,0 +1,17 @@
+{
+  "name": "tut63",
+  "version": "1.0.0",
+  "description": "This is the best package ever built by someone",
+  "main": "tut63.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "Anish",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~4.18.1"
+  }
+}
